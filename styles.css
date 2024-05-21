@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#calendar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background: #333;
+    color: white;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.month li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.weekdays, .days {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.weekdays li, .days li {
+    width: 13%;
+    text-align: center;
+}
+
+.days li {
+    cursor: pointer;
+}
+
+.days li:hover {
+    background: #ddd;
+}
+
+#holiday-info {
+    margin: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+}
